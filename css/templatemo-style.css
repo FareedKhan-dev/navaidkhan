@@ -6,6 +6,7 @@ http://www.templatemo.com/tm-498-stimulus
 
 */
 
+
 body {
 	background: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
@@ -126,7 +127,7 @@ p {
 
 #experience,
 #education {
-  padding-top: 50px !important;
+  padding-top: 30px !important;
 }
 
 #home .container,
@@ -695,6 +696,9 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
+  .navbar-brand {
+    padding-top: 10px;
+  }
   #experience,
 #education {
   padding-top: 0px !important;
