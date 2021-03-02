@@ -10,6 +10,7 @@ http://www.templatemo.com/tm-498-stimulus
 body {
 	background: #ffffff;
     font-family: 'Source Sans Pro', sans-serif;
+    font-family: Poppins, 'san-serif';
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
@@ -80,7 +81,7 @@ p {
 
 .section-btn {
   background-color: transparent;
-  border: 3px solid #232B2B;
+  border: 3px solid #25274d;
   border-radius: 100px;
   color: #232B2B;
   font-size: 13px;
@@ -94,7 +95,7 @@ p {
 }
 
 .section-btn:hover {
-  background: black;
+  background: #25274d;
   border-color: transparent;
   color: white;
   font-weight: 500;
@@ -272,7 +273,7 @@ a:hover, a:active, a:focus {
   margin-top: -10px;
   margin-left: -10px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #25274d;
   border-top-color: #f9f9f9;
   animation: spinner .6s linear infinite;
 }
@@ -308,7 +309,7 @@ a:hover, a:active, a:focus {
 .custom-navbar .nav li a {
     color: #666;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 40px;
@@ -317,7 +318,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: black;
+    color: #25274d;
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -327,7 +328,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: black;
+    color: #25274d;
 }
 
 .custom-navbar .navbar-toggle {
@@ -340,7 +341,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
+    background: #25274d;
     border-color: transparent;
 }
 
@@ -369,14 +370,14 @@ a:hover, a:active, a:focus {
 }
 
 #home .col-md-6 {
-  background: #f1e2d7;
+  background: #fff;
 /* light blue color: #c3eafd; */
   padding-right: 0;
   padding-left: 0;
 }
 
 #home .home-img {
-  background: url('../images/test3.png') no-repeat;
+  background: url('../images/test4.png') no-repeat;
   background-size:cover;
   background-position: 50% 50%;
   width: 100%;
@@ -474,6 +475,7 @@ a:hover, a:active, a:focus {
 
 #experience .media-heading {
   margin-bottom: 0px;
+  background-color: #25274d !important; color: #fff;
 }
 
 #experience .media .fa {
@@ -482,7 +484,7 @@ a:hover, a:active, a:focus {
 }
 
 #experience small {
-  color: #633;
+  color: #25274d;
   font-weight: bold;
 }
 
@@ -505,6 +507,9 @@ a:hover, a:active, a:focus {
 
 #education .media-heading {
   margin-bottom: 0px;
+  /* background-color: #00a2e2;  */
+  background-color: #25274d; 
+  color: #fff;
 }
 
 #education .media .fa {
@@ -513,7 +518,7 @@ a:hover, a:active, a:focus {
 }
 
 #education small {
-  color: #886D1E;
+  color: #2e9cca;;
   font-weight: bold;
 }
 

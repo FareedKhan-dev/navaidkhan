@@ -1,35 +1,33 @@
+/*-------------------------------------------------------------------------------
+  PRE LOADER
+-------------------------------------------------------------------------------*/
 
-
-  /*-------------------------------------------------------------------------------
-    PRE LOADER
-  -------------------------------------------------------------------------------*/
-
-  $(window).load(function(){
-    $('.preloader').fadeOut(1000); // set duration in brackets    
-  });
+$(window).load(function () {
+  $('.preloader').fadeOut(1000); // set duration in brackets    
+});
 
 
 
-  /* HTML document is loaded. DOM is ready. 
-  -------------------------------------------*/
+/* HTML document is loaded. DOM is ready. 
+-------------------------------------------*/
 
-  $(document).ready(function() {
+$(document).ready(function () {
 
 
   /*-------------------------------------------------------------------------------
     Navigation - Hide mobile menu after clicking on a link
   -------------------------------------------------------------------------------*/
 
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
+  $('.navbar-collapse a').click(function () {
+    $(".navbar-collapse").collapse('hide');
+  });
 
 
-    $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(".navbar").offset().top > 50) {
-        $(".navbar-fixed-top").addClass("top-nav-collapse");
+      $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+      $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
   });
 
@@ -39,7 +37,7 @@
     jQuery Parallax
   -------------------------------------------------------------------------------*/
 
-    function initParallax() {
+  function initParallax() {
     $('#home').parallax("100%", 0.1);
     $('#about').parallax("100%", 0.3);
     $('#service').parallax("100%", 0.2);
@@ -57,25 +55,45 @@
   /*-------------------------------------------------------------------------------
     smoothScroll js
   -------------------------------------------------------------------------------*/
-  
-    $(function() {
-        $('.custom-navbar a, #home a').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 49
-            }, 1000);
-            event.preventDefault();
-        });
+
+  $(function () {
+    $('.custom-navbar a, #home a').bind('click', function (event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 49
+      }, 1000);
+      event.preventDefault();
     });
-  
+  });
+
 
 
   /*-------------------------------------------------------------------------------
     wow js - Animation js
   -------------------------------------------------------------------------------*/
 
-  new WOW({ mobile: false }).init();
+  new WOW({
+    mobile: false
+  }).init();
 
 
+});
+
+
+
+$(".header").click(function () {
+
+  $header = $(this);
+  //getting the next element
+  $content = $header.next();
+  //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+  $content.slideToggle(300, function () {
+    //execute this after slideToggle is done
+    //change text of header based on visibility of content div
+    $header.text(function () {
+      //change text based on condition
+      return $content.is(":visible") ? "Show Less" : "Show More";
+    });
   });
 
+});
