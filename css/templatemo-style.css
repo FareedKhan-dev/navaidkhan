@@ -759,12 +759,26 @@ footer {
   }
 }
 
+
+
+
 @media only screen and (max-width: 767px) {
+
+  /* .education-thumb {
+    padding: 0px !important;
+  } */
+
+  #courses .media-heading {
+    font-size: 18px !important;
+  }
 
   
 #projects .section-title {
   padding-top: 0px !important;
 }
+
+
+
 
 
   .navbar-brand {
@@ -782,8 +796,8 @@ footer {
 }
 
   #projects, #education,#courses, #about {
-    margin: 4px;
-    padding: 15px;
+    /* margin: 4px;
+    padding: 15px; */
     
   }
 
@@ -802,6 +816,10 @@ footer {
     height: auto;
     padding-top: 32px;
     padding-bottom: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
   }
 
   #home .container,
@@ -816,13 +834,17 @@ footer {
     padding-left: 15px;
   }
 
-  #experience .experience-thumb,
-  #courses .education-thumb,
-#education .education-thumb  {
+  #experience .experience-thumb
+   {
   padding: 15px !important;
   margin-top: 15px !important;
 
 }
+
+#courses .education-thumb,
+#education .education-thumb  {
+  padding: 0px !important;
+  margin-top: 0px !important;}
 
   #about .col-md-3,
   #experience .col-md-6,
@@ -838,6 +860,8 @@ footer {
     min-height: 100vh;
   }
 }
+
+
 
 @media only screen and (max-width: 1024px) {
   .section-title {
@@ -921,4 +945,9 @@ img {
 
 .top-me {
   margin-top: 310px !important;
+}
+
+
+#courses .media-heading {
+  font-size: 20px !important;
 }
