@@ -764,9 +764,9 @@ footer {
 
 @media only screen and (max-width: 767px) {
 
-  /* .education-thumb {
-    padding: 0px !important;
-  } */
+  #projects {
+    padding: 15px;
+  }
 
   #courses .media-heading {
     font-size: 18px !important;
