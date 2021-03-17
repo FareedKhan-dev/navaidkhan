@@ -1,75 +1,376 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../images/group2.png" >
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  <title>Projects</title>
 
-  <title>Navaid</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Our Custom CSS -->
+  <link rel="stylesheet" href="project.css">
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  </script>
+
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="../css/animate.css"> -->
+
+
 
   <style>
-    body {
-      font-family: 'Poppins';
+    #sidebar {
+      text-transform: uppercase;
     }
+   
   </style>
-  <link rel="stylesheet" href="project.css">
+
+
 </head>
 
 <body>
-  <!-- <div id="accordion">
-    <div class=" mt-4 container-fluid ">
-      <h3 class="p-3 header">Electronic Engineering Projects</h3>
-      <h4 class="p-3">Semester projects</h4>
 
+
+  <!-- PRE LOADER -->
+
+  <div class="preloader">
+    <div class="spinner">
+      <span class="spinner-rotate"></span>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-12">
-          <div class="card " style="border: 1px solid rgb(153, 147, 147);">
-            <img class="card-img-top"
-              src="https://images.unsplash.com/photo-1535025639604-9a804c092faa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cb0ceb620f241feb2f859e273634393&auto=format&fit=crop&w=500&q=80"
-              alt="Card image cap">
-            <div class="card-body">
-              <h5 style="cursor: pointer;" class="card-title btn btn-link collapsed text-left p-0"
-                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                PLC and Arduino based projects
-              </h5>
-              <p class="card-text collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion"
-                style="text-decoration: none;">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet
-                aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum
-                illo impedit incidunt laborum laudantium...
+  </div>
 
-              </p>
+  <a id="button">
+  </a>
+
+  <div class="wrapper">
+    <!-- Sidebar Holder -->
+    <nav id="sidebar">
+      <div>
+        <div class="sidebar-header">
+          <div class="row">
+            <div class="col-1">
+              <img src="../images/group1.png" alt="" width="30">
+
+            </div>
+            <div class="col px-3 ">
+              <h3 class="changing">Navaid Khan Projects</h3>
+
             </div>
           </div>
         </div>
       </div>
+
+
+      <ul class="list-unstyled components ">
+        <!-- <p>Dummy Heading</p> -->
+        <!-- <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home </a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#education">Home 1</a>
+            </li>
+            <li>
+              <a href="#">Home 2</a>
+            </li>
+            <li>
+              <a href="#">Home 3</a>
+            </li>
+          </ul>
+        </li> -->
+        <li>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">BS in Electronic
+            Engineering</a>
+          <ul class="collapse list-unstyled custom-navbar" id="pageSubmenu">
+            <li>
+              <a href="#project1">Line Following Robot</a>
+            </li>
+            <li>
+              <a href="#project2">Face Detection using MATLAB</a>
+            </li>
+            <li>
+              <a href="#project3">Automated Parking system</a>
+            </li>
+            <li>
+              <a href="#project4">Home Automation</a>
+            </li>
+            <li>
+              <a href="#project5">Water Bottle filling system</a>
+            </li>
+          </ul>
+          <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">MSc in System
+            Engineering <br> & Engineering Management</a>
+          <ul class="collapse list-unstyled custom-navbar" id="pageSubmenu2">
+            <li>
+              <a href="#project21">Predicting the remaining useful life of bearing system using Machine Learning</a>
+            </li>
+            <li>
+              <a href="#project22">A non-linear control system by designing a controller for Apollo11 mission</a>
+            </li>
+            <li>
+              <a href="#project23">Designed a Data Logger on Atmega328</a>
+            </li>
+
+          </ul>
+
+        </li>
+        <!-- <li>
+          <a href="#">Portfolio</a>
+        </li> -->
+        <li class="custom-navbar">
+          <a href="#b-thesis">Bachelor thesis</a>
+
+        </li>
+        <li class="custom-navbar">
+          <a href="#m-thesis">Master thesis</a>
+        </li>
+      </ul>
+
+      <ul class="list-unstyled CTAs">
+        <li>
+          <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download"> <i
+              class="fa fa-download"></i> Download Resume</a>
+        </li>
+        <li>
+          <a href="../" class="article">
+            <i class="fa fa-arrow-left"></i> Back to Profile</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content Holder -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="navbar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+
+          <div>
+            <ul class="nav navbar-nav ml-auto">
+              <!-- <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li> -->
+              <li class="nav-item">
+                <a class="navbar-brand okay " style="font-size: 14px; font-weight: 400;"> <span
+                    style="font-weight: 600; color: #25274d;">EN</span><span style="cursor: pointer; color: black;"
+                    onclick="window.location.href='de/';"> | DE </span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="color-blue  ">
+        <h2 class=" font-weight-bold changing-2">Bachelor of Science in Electronic Engineering</h2>
+        <h5>Semester Projects</h5>
+      </div>
+
+      <h4 id="project1">Line Following Robot</h4>
+
+      <p>A Line following robot was developed using a PIC microcontroller. The robot task was to successfully follow a
+        path and decide the minimum distance to reach the final destination. The controller which was used for this was
+        PIC16f877a. It was also used as an application where the robot carries the prepared order in a restaurant to
+        deliver it to a specific table.</p>
+
+      <div class="line"></div>
+
+      <h4 id="project2">Face Detection using MATLAB</h4>
+
+      <p>The Viola Jones algorithm was used to detect the face. This project was further used for an application in
+        2020. The advanced version of this project was to detect the faces with masks (KN95 & Surgical) in public
+        places.</p>
+
+      <div class="line"></div>
+
+      <h4 id="project3">Automated Parking system</h4>
+
+      <p>A parking plaza was automated by using Siemens PLC. The programming language used in this project was “Ladder
+        programming”. The system was also able to detect the type of vehicle entering in the parking plaza by using
+        image processing algorithms.</p>
+
+        <div class="line"></div>
+
+        <h4 id="project4">Home Automation</h4>
+  
+        <p>A fully automated home was designed by using PIC and Arduino controller. Every appliance was automated and can
+          be operated with the help of “voice”, “Bluetooth” and “Web-based application”.</p>
+  
+        <div class="line"></div>
+  
+        <h4 id="project5">Water Bottle filling system</h4>
+  
+        <p>A conveyer belt was controlled with the help of Delta PLC. In addition, the PLC was also used to control the
+          filling system. Sensors were deployed to detect an empty bottle and afterwards, the filling system activates
+          automatically until the bottle is fully filled. The accuracy and latency were a challenge which was solved
+          through programming and different additional sensors.</p>
+  
+          <div class="line"></div>
+  
+        <div class="color-blue">
+          <h2 class=" font-weight-bold changing-3">MSc in System Engineering & Engineering Management - Mechatronics</h2>
+          <h5>Semester Projects</h5>
+        </div>
+  
+        <h4 id="project21">Predicting the remaining useful life of bearing system using Machine Learning</h4>
+  
+        <p>The task was to define the predictive maintenance for bearings using different classification algorithms and to predict the remaining use full life (RUL) of the bearing / classify the operational condition of the bearing that whether it is running in normal condition or its running in anomaly and would be in failure any time. This was a serious problem as bearing is the essential part used in all the rotating machinery. For this task, six (run to failure) data sets from three different running conditions were utilized. 
+          <br>
+          The given data acquisition parameters were: i) Vibration signal with a sampling frequency of 25.6 kHz where 2560 samples were recorded each 10 seconds. ii) Temperature signals with a sampling frequency of 10Hz where 600 sample were recorded each minute. The classification algorithm used for this task was Support Vector Machine (SVM). The approach used to solve the problem starts with the first step which is the sampling of the given data sets through MATLAB. This leads to the next step which is using feature extraction technique. After feature extraction of the data sets, the data sets were trained and tested using the SVM classification algorithm.</p>
+  
+        <div class="line"></div>
+  
+        <h4 id="project22">A non-linear control system by designing a controller for Apollo11 mission</h4>
+  
+        <p>The task was to derive a nonlinear state space model of the system based on first principles with the states: mass m, height and its derivative, and input: derivative of mass. Linearized the system model in suitable operation point. Analyse the system behavior, i.e., stability, controllability, observability, as necessary. In addition, a state space controller design was also needed to be designed based on either the linear quadratic or pole placement approach. Afterwards, a state observer was also developed and designed assuming that only the position of the cart is measurable. 
+  
+        </p>
+  
+        <div class="line"></div>
+  
+        <h4 id="project23">Designed a Data Logger on Atmega328</h4>
+  
+        <p>A data logger was designed on Atmega328. The AVR system is to be used as a data logger with a RS232 interface. Afterwards, the program was also tested on LabView.
+          The conditions were:
+          The voltage at the analogue input A0 is recorded and displayed as a bar graph in the upper LCD line. After the recording of the waveform is started dashes are displayed in the upper LCD line indicating that no samples have been read in. During sampling the current sample is displayed at the most right position and the previous samples are shifted to the left (Fig. 2). Additionally, the voltage and the index of the current sample are displayed (Fig. 1).
+  
+          <img class="pb-3" style="width: 100%;"  src="../images/project.png" alt=""> <br>
+  
+          All samples are stored in an internal buffer of at least 100 samples. If the buffer has been completely filled the index of the current sample points to the end of the buffer and the oldest sample is discarded. Recording of the samples is started by pressing key ‘A’ and stopped by pressing key ‘B’. The sampling rate can be selected by pressing key ‘1’(lowest speed) to ‘9’ (highest speed) when recording is stopped. The selected speed is displayed at the LCD. After recording has been stopped the recorded waveform can be examined by shifting the display window. For adjusting the display window the potentiometer 2 or the keypad may be used. As in the recording mode the voltage and the index of the right most sample are shown on the LCD.
+          
+  
+        </p>
+  
+  
+        <div class="line"></div>
+  
+  
+        <div class="color-blue">
+          <h2 class=" font-weight-bold" id="b-thesis">
+            Bachelor Thesis</h2>
+        </div>
+  
+        <h4 >Self-Stabilizing un-manned aerial vehicle (Drone Quadcopter)</h4>
+  
+        <p>A control system was made using an onboard microprocessor and inertial measurement system. The main task of project is to stabilize the aerial vehicle at a certain height and location which can also detect obstacles and made decisions according to the flight plan. The aerial vehicle was able to lock a target and certain operations can be then performed for e.g. (Throwing water, Parcel Delivery etc.). The project won different competitions. A research paper was also published on this project. Afterwards, for more precise result, initial measurement unit was also upgraded with latest ublox global positioning system. The advanced control system can be implemented on any type of aerial vehicle (Tri, Penta & Hexacopter). 
+        </p>
+  
+        <div class="line"></div>
+  
+        <div class="color-blue" id="m-thesis">
+          <h2 class=" font-weight-bold">
+            Master Thesis</h2>
+        </div>
+  
+        <h4 >Enabling Narrowband IoT in complex Building automation network</h4>
+  
+        <p>Because of the limitation of short-range protocols i.e., ZigBee, Bluetooth, WLAN etc. in the building automation sector, a new gateway with long range Narrowband IoT protocol was developed by using u-blox SARA N211 chip. This emerging and latest gateway protocol technology provides the secure wireless communication with the Vodafone cellular service along with 2500 data points. The gateway was capable of converting any protocol data to the Narrowband IoT protocol so this project can also be implemented in already established building automation networks. The data was monitored on the cloud service. 
+          <br>
+          The hardware was designed on Altium software by using Wurth Electronics components and the driver was developed on Linux Embedded C programming. The project was done with MBS GmBH and CS Lab, Krefeld Germany. Additional workshop was also attended in Hilversum, Netherlands at SODAQ office in order to understand the hardware communication of ublox and Vodafone NarrowBand IoT kit with the gateway. The project was successfully completed before the deadline and the prototype was presented on many platforms. 
+  
+  
+        </p>
+  
+  
+
+
+
+        <div class="" style="padding: 10px; text-align: center; font-weight: 700;">
+          <small>&copy; Copyright 2021, Navaid Hasan Khan</small>
+      </div>
+
     </div>
-  </div> -->
+    
+  </div>
 
 
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
   </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $(this).toggleClass('active');
+      });
+    });
+
+    var btn = $('#button');
+
+    $(window).scroll(function () {
+      if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    });
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: 0
+      }, '300');
+    });
+
+    $(function () {
+      $('.custom-navbar a, #home a').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 49
+        }, 1000);
+        event.preventDefault();
+      });
+    });
+  </script>
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/custom.js"></script>
 </body>
 
 </html>
